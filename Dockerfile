@@ -55,6 +55,7 @@ ARG WHEEL_CONSTRAIN=""
 
 ADD data /tmp/
 COPY scripts /opt/loci/scripts
+COPY ${PROJECT} /tmp/${PROJECT}
 ADD bindep.txt pydep.txt $EXTRA_BINDEP $EXTRA_PYDEP /opt/loci/
 
 RUN /opt/loci/scripts/install.sh
