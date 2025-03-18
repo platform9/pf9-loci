@@ -82,7 +82,7 @@ if [[ "${PLUGIN}" == "no" ]]; then
     $(dirname $0)/pip_install.sh ${PYDEP_PACKAGES[@]}
 fi
 
-$(dirname $0)/clone_project.sh
+$(dirname $0)/copy_project.sh
 $(dirname $0)/install_packages.sh
 
 extra_projects_path=""
